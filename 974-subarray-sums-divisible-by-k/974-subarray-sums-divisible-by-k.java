@@ -9,13 +9,15 @@ class Solution {
         
         for(int i:nums){
             sum += i; 
-            int rem = sum%k;
+//             int rem = sum%k;
             
-            // if sum<0 eg -2 and k=5 then -2%5=0 
-            // but we want 3 there. 
-            // So add k to make sum becomes positive
-            if(rem<0)
-                rem += k;
+//             // if sum<0 eg -2 and k=5 then -2%5=0 
+//             // but we want 3 there. 
+//             // So add k to make sum becomes positive
+//             if(rem<0)
+//                 rem += k;
+            
+            int rem = ((sum % k) + k) % k;
             
             if(map.containsKey(rem)){
                 ans += map.get(rem);
