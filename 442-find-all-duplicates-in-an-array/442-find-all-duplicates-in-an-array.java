@@ -9,7 +9,6 @@ class Solution {
         for(int i=1;i<=nums.length;i++)
             if(count[i]>1){
                 ans.add(i);
-                //count[i]=0;
             }
                 
         return ans;
