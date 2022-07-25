@@ -1,6 +1,8 @@
 class Solution {
     public String longestPalindrome(String s) {
-        
+        // https://www.youtube.com/watch?v=WpYHNHofwjc
+        // Logic : Extremeties should be same
+        // Part in between should be palindrome
         boolean[][] dp=new boolean[s.length()][s.length()];
         int start=0, end=1, len=0;
         for(int g=0; g<s.length();g++){
