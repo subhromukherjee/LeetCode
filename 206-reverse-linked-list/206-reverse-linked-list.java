@@ -15,6 +15,7 @@ class Solution {
         ListNode prev = null;
         
         while(curr!=null){
+            // Swap nodes
             ListNode temp = curr.next;
             curr.next = prev;
             prev = curr;
