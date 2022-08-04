@@ -1,3 +1,16 @@
+// (Using Moore’s Voting Algorithm):   
+
+// Approach: This is a two-step process. 
+// The first step gives the element that maybe the majority element in the array. If there is a majority element in an array, then this step will definitely return majority element, otherwise, it will return candidate for majority element.
+// Check if the element obtained from the above step is majority element. This step is necessary as there might be no majority element.
+
+// Complexity Analysis: 
+
+// Time Complexity: O(n). 
+// As two traversal of the array is needed, so the time complexity is linear.
+// Auxiliary Space: O(1). 
+// As no extra space is required.
+
 class Solution {
     public int majorityElement(int[] nums) {
         int ans = findMajority(nums);
