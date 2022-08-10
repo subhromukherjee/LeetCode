@@ -30,12 +30,13 @@ class Solution {
         int len = 0;
         
         for(int currentElement:nums){
+            // Lower bound
             int i = Arrays.binarySearch(dp, 0, len, currentElement);
             if(i<0) // Element not found
                 i = -(i+1);
             
             dp[i] = currentElement; // Replacing the element
-            // Element found at last pos
+            // Element added at last pos
             if(i==len)  len++;
             
         }
