@@ -18,6 +18,8 @@ class Solution {
 //         }
 //         return res;
 //     }
+    // Rule: If in brute force , j loop is dependent on i, use stack
+    //     run the loop in the opposite direction of j loop
     public int[] finalPrices(int[] prices){
         int n = prices.length;
         Stack<Integer> stack = new Stack<>();
@@ -35,3 +37,4 @@ class Solution {
     }
     
 }
+//Complexity: O(n)
